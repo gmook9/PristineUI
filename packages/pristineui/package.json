@@ -1,6 +1,6 @@
 {
   "name": "@gmook9/pristine-ui",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "PristineUI – React components built with Tailwind.",
   "license": "MIT",
   "main": "./dist/index.cjs",
@@ -11,7 +11,8 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    }
+    },
+    "./styles.css": "./dist/styles.css"
   },
   "files": [
     "dist"
@@ -20,6 +21,8 @@
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",
+    "build:css": "tailwindcss -c tailwind.config.ts -i ./src/styles.css -o ./dist/styles.css --minify",
+    "prepack": "pnpm build && pnpm build:css",
     "lint": "eslint .",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "storybook": "storybook dev -p 6006 -c .storybook",
