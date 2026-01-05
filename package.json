@@ -1,6 +1,6 @@
 {
   "name": "pristineui-monorepo",
-  "private": true,
+  "private": false,
   "packageManager": "pnpm@9.0.0",
   "scripts": {
     "dev": "pnpm -r dev",
