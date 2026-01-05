@@ -47,12 +47,12 @@ importers:
 
   apps/playground:
     dependencies:
+      '@gmook9/pristine-ui':
+        specifier: workspace:*
+        version: link:../../packages/pristineui
       next:
         specifier: 15.1.3
         version: 15.1.3(@babel/core@7.28.5)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      pristine-ui:
-        specifier: workspace:*
-        version: link:../../packages/pristineui
       react:
         specifier: 19.0.0
         version: 19.0.0
