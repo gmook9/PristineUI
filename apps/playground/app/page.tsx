@@ -1,4 +1,4 @@
-import { Button, Card, CardContent, CardHeader, Input } from "pristine-ui";
+import { Button, Card, CardContent, CardHeader, Input } from "@gmook9/pristine-ui";
 
 export default function Page() {
   return (
