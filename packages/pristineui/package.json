@@ -2,7 +2,7 @@
   "name": "pristine-ui",
   "version": "0.1.0",
   "private": true,
-  "description": "PristineUI \u2013 React components built with Tailwind.",
+  "description": "PristineUI – React components built with Tailwind.",
   "license": "MIT",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -31,17 +31,23 @@
     "react-dom": ">=18"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "tailwind-merge": "^2.5.2",
-    "class-variance-authority": "^0.7.1"
+    "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
-    "typescript": "^5.5.4",
-    "tsup": "^8.2.4",
+    "@eslint/js": "^9.8.0",
+    "@storybook/react": "^10.1.11",
+    "@storybook/react-vite": "^10.1.11",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
     "eslint": "^9.8.0",
-    "@eslint/js": "^9.8.0",
+    "postcss": "^8.4.41",
+    "storybook": "^10.1.11",
+    "tailwindcss": "^3.4.10",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4",
     "typescript-eslint": "^8.0.1"
   }
 }
