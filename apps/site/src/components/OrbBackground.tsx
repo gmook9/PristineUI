@@ -25,8 +25,8 @@ export default function OrbBackground({ className }: OrbBackgroundProps) {
       </div>
 
       {/* Subtle vignette + grid to keep text readable */}
-      <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/30 via-zinc-950/65 to-zinc-950" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.06)_1px,transparent_0)] [background-size:18px_18px]" />
+      <div className="absolute inset-0 bg-linear-to-b from-zinc-950/30 via-zinc-950/65 to-zinc-950" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.06)_1px,transparent_0)] bg-size-[18px_18px]" />
     </div>
   );
 }
