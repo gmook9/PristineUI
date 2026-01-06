@@ -63,9 +63,9 @@ export default function Home() {
             <div className="mx-auto mb-8 flex items-center justify-center">
               <div className="rounded-3xl border border-white/10 bg-white/5 p-2 shadow-sm backdrop-blur">
                 <Image
-                  src="/PristineUI_Logo4.png"
+                  src="/PristineUI_Logo5.png"
                   alt="PristineUI logo"
-                  width={300}
+                  width={350}
                   height={300}
                   priority
                 />
