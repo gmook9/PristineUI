@@ -8,7 +8,6 @@ import InstallPill from "../components/InstallPill";
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-zinc-950 text-white">
-      {/* ReactBits background */}
       <OrbBackground />
 
       <div className="relative mx-auto flex min-h-screen max-w-6xl flex-col px-6 py-10">
@@ -17,7 +16,7 @@ export default function Home() {
           <Link href="/" className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 bg-white/5 shadow-sm backdrop-blur">
               <Image
-                src="/Pristine_logo2.png"
+                src="/PristineUI_Logo2.png"
                 alt="PristineUI"
                 width={32}
                 height={32}
@@ -28,7 +27,10 @@ export default function Home() {
           </Link>
 
           <nav className="hidden items-center gap-4 sm:flex">
-            <Link href="/viewComponents" className="text-sm text-white/70 hover:text-white">
+            <Link
+              href="/viewComponents"
+              className="text-sm text-white/70 hover:text-white"
+            >
               Components
             </Link>
             <Link href="/docs" className="text-sm text-white/70 hover:text-white">
@@ -61,8 +63,7 @@ export default function Home() {
             <div className="mx-auto mb-8 flex items-center justify-center">
               <div className="rounded-3xl border border-white/10 bg-white/5 p-2 shadow-sm backdrop-blur">
                 <Image
-                //add src to D:\repos\PristineUI\apps\site\public\PristineUI_Logo.png
-                  src="/PristineUI_Logo3.png"
+                  src="/PristineUI_Logo4.png"
                   alt="PristineUI logo"
                   width={300}
                   height={300}
@@ -70,24 +71,35 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="mx-auto mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/75 backdrop-blur">
+
+            <div className="mx-auto mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/75 backdrop-blur">
               <span className="inline-block h-2 w-2 rounded-full bg-sky-300/80" />
               Tailwind-first • Minimal • OSS
             </div>
 
-            <h1 className="text-balance text-5xl font-semibold tracking-tight sm:text-6xl">
-              Clean components.
-              <span className="block text-white/70">Pristine UI.</span>
-            </h1>
+            {/* FIXED headline + centering + no clipping */}
+            <div className="mx-auto flex max-w-2xl flex-col items-center">
+              <h1 className="w-full pb-1 text-center text-5xl font-semibold tracking-tight leading-[1.05] sm:text-6xl">
+                <span className="mb-2 block">Clean components.</span>
+              </h1>
 
-            <p className="mx-auto mt-5 max-w-xl text-pretty text-lg text-white/70">
-              A minimal React component library with a crisp Tailwind-first style.
-              Built for fast shipping and clean UIs.
-            </p>
+              <p className="mt-5 w-full max-w-xl text-center text-lg leading-relaxed text-white/70">
+                A minimal React component library with a crisp Tailwind-first
+                style. Built for fast shipping and clean UIs.
+              </p>
+            </div>
 
-            <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Link href="/components" className="w-full sm:w-auto">
-                <Button variant="primary" className="w-full px-6 sm:w-auto">
+            {/* buttons */}
+            <div className="mt-8 flex w-full flex-col items-center justify-center gap-3 sm:flex-row">
+              <Link href="/viewComponents" className="w-full sm:w-auto">
+                <Button
+                  variant="primary"
+                  className="w-full sm:w-auto px-6 py-2.5 font-medium
+                    bg-gradient-to-r from-sky-500 to-indigo-500
+                    shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_10px_30px_rgba(59,130,246,0.25)]
+                    hover:brightness-110 active:brightness-95
+                    transition"
+                >
                   Browse components
                 </Button>
               </Link>
@@ -98,13 +110,19 @@ export default function Home() {
                 rel="noreferrer"
                 className="w-full sm:w-auto"
               >
-                <Button variant="ghost" className="w-full px-6 sm:w-auto">
+                <Button
+                  variant="ghost"
+                  className="w-full sm:w-auto px-6 py-2.5 font-medium
+                    border border-white/10 bg-white/5
+                    hover:bg-white/10 hover:border-white/15
+                    shadow-[0_0_0_1px_rgba(255,255,255,0.06)]
+                    transition"
+                >
                   npm package
                 </Button>
               </a>
             </div>
 
-            {/* install pill (client component) */}
             <InstallPill />
 
             <div className="mt-10 grid gap-4 sm:grid-cols-3">
