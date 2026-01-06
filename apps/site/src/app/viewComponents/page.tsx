@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button, Card, CardHeader, CardContent } from "@gmook9/pristine-ui";
+import { Button, Card, CardHeader, CardContent, Input } from "@gmook9/pristine-ui";
 
 import OrbBackground from "../../components/OrbBackground";
 
@@ -81,22 +81,22 @@ export default function ComponentsPage() {
             </CardContent>
           </Card>
 
+          {/* Inputs card */}
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
-            <CardHeader>
-              <h3 className="text-lg font-semibold">Layout</h3>
-              <p className="text-sm text-white/70">Simple demo block</p>
+            <CardHeader className="space-y-1">
+              <h3 className="text-lg font-semibold">Inputs</h3>
+              <p className="text-sm text-white/70">Basic form control.</p>
             </CardHeader>
-            <CardContent className="space-y-3">
-              <div className="rounded-2xl border border-white/10 bg-black/25 p-4 shadow-sm backdrop-blur">
-                <div className="text-sm font-semibold">Example section</div>
-                <p className="mt-1 text-sm text-white/70">
-                  This page will expand as you add more components.
-                </p>
-              </div>
+            <CardContent>
+              <div className="flex flex-col gap-4">
+                <Input placeholder="Email" />
+                <Input placeholder="Password" type="password" />
 
-              <Button variant="primary" className="w-full">
-                Add more components later →
-              </Button>
+                <div className="grid grid-cols-2 gap-4">
+                  <Input placeholder="First name" />
+                  <Input placeholder="Last name" />
+                </div>
+              </div>
             </CardContent>
           </Card>
         </section>
