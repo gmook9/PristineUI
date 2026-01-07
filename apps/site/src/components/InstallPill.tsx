@@ -28,7 +28,7 @@ export default function InstallPill() {
 
   return (
     <div className="mt-6 flex justify-center">
-      <div className="group relative inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80 shadow-sm backdrop-blur">
+      <div className="group relative inline-flex items-center gap-3 rounded-full border border-white/10 bg-yellow-400/30 px-4 py-2 text-sm text-white/80 shadow-sm backdrop-blur">
         <span className="rounded-full bg-white/10 px-2 py-0.5 text-[11px] text-white/70">
           install
         </span>
