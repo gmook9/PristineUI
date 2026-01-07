@@ -26,7 +26,7 @@ export default function Home() {
             <span className="text-sm font-semibold tracking-wide">PristineUI</span>
           </Link>
 
-          <nav className="hidden items-center gap-4 sm:flex">
+          <nav className="flex flex-wrap items-center justify-end gap-4 text-right">
             <Link
               href="/viewComponents"
               className="text-sm text-white/70 hover:text-white"

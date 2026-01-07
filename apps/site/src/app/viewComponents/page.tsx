@@ -38,31 +38,32 @@ export default function ComponentsPage() {
               <h3 className="text-lg font-semibold">Buttons</h3>
               <p className="text-sm text-white/70">Variants + sizes</p>
             </CardHeader>
-            <CardContent className="space-y-3">
-              <Button variant="primary" className="w-full">
-                Primary
-              </Button>
-              <Button variant="subtle" className="w-full">
-                Subtle
-              </Button>
-              <Button variant="ghost" className="w-full">
-                Ghost
-              </Button>
-              <Button variant="danger" className="w-full">
-                Danger
-              </Button>
-              <Button disabled className="w-full">
-                Disabled
-              </Button>
+              <CardContent>
+                <div className="flex flex-col gap-3">
+                  <Button variant="primary" className="w-full">
+                    Primary
+                  </Button>
+                  <Button variant="subtle" className="w-full">
+                    Subtle
+                  </Button>
+                  <Button variant="ghost" className="w-full">
+                    Ghost
+                  </Button>
+                  <Button variant="danger" className="w-full">
+                    Danger
+                  </Button>
+                  <Button disabled className="w-full">
+                    Disabled
+                  </Button>
+                </div>
 
-              <div className="grid grid-cols-3 gap-2 pt-2">
-                <Button size="sm">sm</Button>
-                <Button size="md">md</Button>
-                <Button size="lg">lg</Button>
-              </div>
-            </CardContent>
+                <div className="grid grid-cols-3 gap-2 pt-3">
+                  <Button size="sm">sm</Button>
+                  <Button size="md">md</Button>
+                  <Button size="lg">lg</Button>
+                </div>
+              </CardContent>
           </Card>
-
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
               <h3 className="text-lg font-semibold">Card</h3>
