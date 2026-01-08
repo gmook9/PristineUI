@@ -4,6 +4,7 @@ import { Button, Card, CardContent } from "@gmook9/pristine-ui";
 
 import OrbBackground from "../components/OrbBackground";
 import InstallPill from "../components/InstallPill";
+import TopNav from "../components/TopNav";
 
 export default function Home() {
   return (
@@ -11,51 +12,7 @@ export default function Home() {
       <OrbBackground />
 
       <div className="relative mx-auto flex min-h-screen max-w-6xl flex-col px-6 py-10">
-        {/* top nav */}
-        <header className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 bg-white/5 shadow-sm backdrop-blur">
-              <Image
-                src="/PristineUI_Logo2.png"
-                alt="PristineUI"
-                width={32}
-                height={32}
-                priority
-              />
-            </div>
-            <span className="text-sm font-semibold tracking-wide">PristineUI</span>
-          </Link>
-
-          <nav className="flex flex-wrap items-center justify-end gap-4 text-right">
-            <Link
-              href="/viewComponents"
-              className="text-sm text-white/70 hover:text-white"
-            >
-              Components
-            </Link>
-            <Link href="/docs" className="text-sm text-white/70 hover:text-white">
-              Docs
-            </Link>
-            <a
-              href="https://github.com/gmook9/PristineUI"
-              target="_blank"
-              rel="noreferrer"
-              className="text-sm text-white/70 hover:text-white"
-            >
-              GitHub
-            </a>
-          </nav>
-
-          {/* mobile quick link */}
-          <a
-            href="https://github.com/gmook9/PristineUI"
-            target="_blank"
-            rel="noreferrer"
-            className="sm:hidden text-sm text-white/70 hover:text-white"
-          >
-            GitHub
-          </a>
-        </header>
+        <TopNav />
 
         {/* hero */}
         <section className="flex flex-1 items-center justify-center py-16 sm:py-24">
