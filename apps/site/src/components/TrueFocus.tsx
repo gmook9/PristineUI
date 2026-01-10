@@ -20,7 +20,7 @@ interface FocusRect {
 }
 
 const TrueFocus: React.FC<TrueFocusProps> = ({
-  sentence = 'True Focus',
+  sentence = 'Pristine UI',
   separator = ' ',
   manualMode = false,
   blurAmount = 5,
