@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button, Card, CardContent } from "@gmook9/pristine-ui";
 
-import OrbBackground from "../components/OrbBackground";
-import InstallPill from "../components/InstallPill";
-import TopNav from "../components/TopNav";
+import OrbBackground from "@/components/OrbBackground";
+import InstallPill from "@/components/InstallPill";
+import TopNav from "@/components/TopNav";
 
 export default function Home() {
   return (
