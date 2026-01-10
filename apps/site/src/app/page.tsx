@@ -1,10 +1,11 @@
-import Image from "next/image";
+"use client";
 import Link from "next/link";
 import { Button, Card, CardContent } from "@gmook9/pristine-ui";
 
-import OrbBackground from "../components/OrbBackground";
-import InstallPill from "../components/InstallPill";
-import TopNav from "../components/TopNav";
+import OrbBackground from "@/components/OrbBackground";
+import InstallPill from "@/components/InstallPill";
+import TopNav from "@/components/TopNav";
+import TrueFocus from '@/components/TrueFocus';
 
 export default function Home() {
   return (
@@ -18,15 +19,9 @@ export default function Home() {
         <section className="flex flex-1 items-center justify-center py-16 sm:py-24">
           <div className="w-full max-w-3xl text-center">
             <div className="mx-auto mb-8 flex items-center justify-center">
-              <div className="rounded-3xl border border-white/10 bg-white/5 p-2 shadow-sm backdrop-blur">
-                <Image
-                  src="/PristineUI_Logo5.png"
-                  alt="PristineUI logo"
-                  width={350}
-                  height={300}
-                  priority
-                />
-              </div>
+              <TrueFocus
+                borderColor="#29ff86"
+              />
             </div>
 
             <div className="mx-auto mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/75 backdrop-blur">
