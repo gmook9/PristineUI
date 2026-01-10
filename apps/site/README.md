@@ -1,28 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PristineUI — Documentation Site
+
+This repository contains the source code for the PristineUI documentation website.  
+The site is open source and available at: https://pristineui.dev
+
+PristineUI is a Tailwind-first React component library focused on clean, minimal, and modern UI building blocks.  
+This repository covers the public docs, demos, and marketing site. It is not the component library package itself.
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+(You can also use npm, yarn, or bun if preferred.)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Once running locally, visit: http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Learning More
 
-## Learn More
+The project is built on Next.js, React, TypeScript, and TailwindCSS.  
+If you're unfamiliar with any of those, their official documentation is a good starting point.
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js: https://nextjs.org/docs
+- TailwindCSS: https://tailwindcss.com
+- React: https://react.dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Notes
+
+This repository is for the documentation site only.  
+The actual UI library package can be found on npm as:
+
+`@gmook9/pristine-ui`
+
+## Contributing
+
+PristineUI is open source. Pull requests for improvements, documentation fixes, examples, or clarifications are welcome.
