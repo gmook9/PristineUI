@@ -5,7 +5,6 @@ import { Button, Card, CardContent } from "@gmook9/pristine-ui";
 import OrbBackground from "@/components/OrbBackground";
 import InstallPill from "@/components/InstallPill";
 import TopNav from "@/components/TopNav";
-
 import GradientText from "@/components/GradientText";
 
 export default function Home() {
