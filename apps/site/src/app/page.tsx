@@ -7,6 +7,8 @@ import InstallPill from "@/components/InstallPill";
 import TopNav from "@/components/TopNav";
 import TrueFocus from '@/components/TrueFocus';
 
+import GradientText from "@/components/GradientText";
+
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-zinc-950 text-white">
@@ -19,9 +21,14 @@ export default function Home() {
         <section className="flex flex-1 items-center justify-center py-16 sm:py-24">
           <div className="w-full max-w-3xl text-center">
             <div className="mx-auto mb-8 flex items-center justify-center">
-              <TrueFocus
-                borderColor="#29ff86"
-              />
+              <GradientText
+                colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                animationSpeed={3}
+                showBorder={false}
+                className="custom-class text-2xl"
+              >
+                Add a splash of color!
+              </GradientText>
             </div>
 
             <div className="mx-auto mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/75 backdrop-blur">
