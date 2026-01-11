@@ -5,8 +5,6 @@ import { Button, Card, CardContent } from "@gmook9/pristine-ui";
 import OrbBackground from "@/components/OrbBackground";
 import InstallPill from "@/components/InstallPill";
 import TopNav from "@/components/TopNav";
-import TrueFocus from '@/components/TrueFocus';
-
 import GradientText from "@/components/GradientText";
 
 export default function Home() {
@@ -22,15 +20,14 @@ export default function Home() {
           <div className="w-full max-w-3xl text-center">
             <div className="mx-auto mb-8 flex items-center justify-center">
               <GradientText
-                colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                colors={["#E0E0E0", "#C4C4C4", "#666666","#3D3D3D", "#C4C4C4", "#E0E0E0"]}
                 animationSpeed={3}
                 showBorder={false}
-                className="custom-class text-2xl"
+                className="custom-class text-8xl font-bold tracking-[0.02em] "
               >
-                Add a splash of color!
+                Pristine UI
               </GradientText>
             </div>
-
             <div className="mx-auto mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/75 backdrop-blur">
               <span className="inline-block h-2 w-2 rounded-full bg-sky-300/80" />
               Tailwind-first • Minimal • OSS
