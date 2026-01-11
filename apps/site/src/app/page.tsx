@@ -5,6 +5,7 @@ import { Button, Card, CardContent } from "@gmook9/pristine-ui";
 import OrbBackground from "@/components/OrbBackground";
 import InstallPill from "@/components/InstallPill";
 import TopNav from "@/components/TopNav";
+
 import GradientText from "@/components/GradientText";
 
 export default function Home() {
@@ -21,9 +22,9 @@ export default function Home() {
             <div className="mx-auto mb-8 flex items-center justify-center">
               <GradientText
                 colors={["#E0E0E0", "#C4C4C4", "#666666","#3D3D3D", "#C4C4C4", "#E0E0E0"]}
-                animationSpeed={3}
+                animationSpeed={5}
                 showBorder={false}
-                className="custom-class text-8xl font-bold tracking-[0.02em] "
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold tracking-[0.18em] drop-shadow-[0_0_30px_rgba(15,23,42,0.9)]"
               >
                 Pristine UI
               </GradientText>
@@ -35,9 +36,6 @@ export default function Home() {
 
             {/* FIXED headline + centering + no clipping */}
             <div className="mx-auto flex max-w-2xl flex-col items-center">
-              <h1 className="w-full pb-1 text-center text-5xl font-semibold tracking-tight leading-[1.05] sm:text-6xl">
-                <span className="mb-2 block">Clean components.</span>
-              </h1>
 
               <p className="mt-5 w-full max-w-xl text-center text-lg leading-relaxed text-white/70">
                 A minimal React component library with a crisp Tailwind-first
