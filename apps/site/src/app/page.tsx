@@ -48,10 +48,10 @@ export default function Home() {
                 <Button
                   variant="primary"
                   className="w-full sm:w-auto px-6 py-2.5 font-medium
-                    bg-gradient-to-r from-sky-500 to-indigo-500
-                    shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_10px_30px_rgba(59,130,246,0.25)]
-                    hover:brightness-110 active:brightness-95
-                    transition"
+                            bg-gradient-to-r! from-blue-600 to-blue-400
+                            shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_10px_30px_rgba(59,130,246,0.25)]!
+                            hover:brightness-110! active:brightness-95!
+                            transition"
                 >
                   Browse components
                 </Button>
