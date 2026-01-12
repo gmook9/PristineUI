@@ -1,12 +1,20 @@
+"use client";
 import Link from "next/link";
 import { Button, Card, CardHeader, CardContent, Input } from "@gmook9/pristine-ui";
 
-import OrbBackground from "../../components/OrbBackground";
+import LiquidChrome from "@/components/LiquidChrome";
 
 export default function ComponentsPage() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-zinc-950 px-6 py-12 text-white">
-      <OrbBackground />
+      <div className="absolute inset-0 opacity-9">
+       <LiquidChrome
+          baseColor={[0.1, 0.1, 0.1]}
+          speed={0.1}
+          amplitude={0.3}
+          interactive={false}
+        />
+        </div>
 
       <div className="relative mx-auto w-full max-w-5xl space-y-10">
         <header className="flex items-start justify-between gap-6">
@@ -21,15 +29,24 @@ export default function ComponentsPage() {
             </h1>
             <p className="mt-2 text-white/70">Current primitives in PristineUI.</p>
           </div>
-
-          <Link href="/" className="shrink-0">
-            <Button
-              variant="ghost"
-              className="border border-white/10 bg-white/5 hover:bg-white/10"
-            >
-              Back home
-            </Button>
-          </Link>
+          <div className="flex shrink-0 items-center gap-3">
+            <Link href="/docs">
+              <Button
+                variant="ghost"
+                className="border border-white/10 bg-white/5 hover:bg-white/10"
+              >
+                Docs
+              </Button>
+            </Link>
+            <Link href="/">
+              <Button
+                variant="ghost"
+                className="border border-white/10 bg-white/5 hover:bg-white/10"
+              >
+                Home
+              </Button>
+            </Link>
+            </div>
         </header>
 
         <section className="grid gap-6 md:grid-cols-3">
