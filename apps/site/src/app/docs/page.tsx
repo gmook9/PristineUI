@@ -15,7 +15,7 @@ function CodeBlock({ children }: { children: string }) {
 export default function DocsPage() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-zinc-950 px-6 py-12 text-white">
-      <div className="pointer-events-none absolute inset-0 z-10">
+      <div className="pointer-events-none absolute inset-0">
         <Aurora
           colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
           blend={0.5}
