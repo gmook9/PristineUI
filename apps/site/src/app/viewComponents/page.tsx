@@ -21,15 +21,24 @@ export default function ComponentsPage() {
             </h1>
             <p className="mt-2 text-white/70">Current primitives in PristineUI.</p>
           </div>
-
-          <Link href="/" className="shrink-0">
-            <Button
-              variant="ghost"
-              className="border border-white/10 bg-white/5 hover:bg-white/10"
-            >
-              Back home
-            </Button>
-          </Link>
+          <div className="flex shrink-0 items-center gap-3">
+            <Link href="/docs">
+              <Button
+                variant="ghost"
+                className="border border-white/10 bg-white/5 hover:bg-white/10"
+              >
+                Docs
+              </Button>
+            </Link>
+            <Link href="/">
+              <Button
+                variant="ghost"
+                className="border border-white/10 bg-white/5 hover:bg-white/10"
+              >
+                Home
+              </Button>
+            </Link>
+            </div>
         </header>
 
         <section className="grid gap-6 md:grid-cols-3">
