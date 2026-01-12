@@ -1,12 +1,20 @@
+"use client";
 import Link from "next/link";
 import { Button, Card, CardHeader, CardContent, Input } from "@gmook9/pristine-ui";
 
-import OrbBackground from "../../components/OrbBackground";
+import LiquidChrome from "@/components/LiquidChrome";
 
 export default function ComponentsPage() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-zinc-950 px-6 py-12 text-white">
-      <OrbBackground />
+      <div className="absolute inset-0 opacity-9">
+       <LiquidChrome
+          baseColor={[0.1, 0.1, 0.1]}
+          speed={0.1}
+          amplitude={0.3}
+          interactive={false}
+        />
+        </div>
 
       <div className="relative mx-auto w-full max-w-5xl space-y-10">
         <header className="flex items-start justify-between gap-6">
