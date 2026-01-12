@@ -17,9 +17,9 @@ export default function DocsPage() {
     <main className="relative min-h-screen overflow-hidden bg-zinc-950 px-6 py-12 text-white">
       <div className="pointer-events-none absolute inset-0">
         <Aurora
-          colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
-          blend={0.5}
-          amplitude={1}
+          colorStops={["#9b42ed", "#5c96f2", "#7bad90"]}
+          blend={1}
+          amplitude={0.8}
           speed={0.5}
         />
       </div>
