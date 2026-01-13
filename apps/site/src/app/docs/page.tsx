@@ -132,48 +132,95 @@ export default function Example() {
           <CardHeader>
             <h2 className="text-lg font-semibold">Available imports</h2>
             <p className="text-sm text-white/70">
-              Copy this to pull in everything we currently export.
+              Grab only what you need. Components are grouped by category.
             </p>
           </CardHeader>
           <CardContent>
-            <CodeBlock>{`import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-  Alert,
-  AlertDescription,
-  AlertTitle,
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-  Badge,
+            <div className="space-y-6">
+              <div className="space-y-2">
+                <div className="text-sm font-semibold text-white/90">Layout</div>
+                <CodeBlock>{`import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  Divider,
+} from "@gmook9/pristine-ui";`}</CodeBlock>
+              </div>
+
+              <div className="space-y-2">
+                <div className="text-sm font-semibold text-white/90">Navigation</div>
+                <CodeBlock>{`import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbSeparator,
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@gmook9/pristine-ui";`}</CodeBlock>
+              </div>
+
+              <div className="space-y-2">
+                <div className="text-sm font-semibold text-white/90">Forms</div>
+                <CodeBlock>{`import {
   Button,
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
   Checkbox,
-  Divider,
+  Input,
+  Select,
+  Switch,
+  Textarea,
+} from "@gmook9/pristine-ui";`}</CodeBlock>
+              </div>
+
+              <div className="space-y-2">
+                <div className="text-sm font-semibold text-white/90">
+                  Disclosure & menus
+                </div>
+                <CodeBlock>{`import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
   Dropdown,
   DropdownContent,
   DropdownItem,
   DropdownTrigger,
-  Input,
+  Tooltip,
+} from "@gmook9/pristine-ui";`}</CodeBlock>
+              </div>
+
+              <div className="space-y-2">
+                <div className="text-sm font-semibold text-white/90">Feedback</div>
+                <CodeBlock>{`import {
+  Alert,
+  AlertDescription,
+  AlertTitle,
   Modal,
   ModalDescription,
   ModalFooter,
   ModalHeader,
   ModalTitle,
   Progress,
-  Select,
   Skeleton,
-  Switch,
+  Toast,
+  ToastAction,
+  ToastDescription,
+  ToastTitle,
+} from "@gmook9/pristine-ui";`}</CodeBlock>
+              </div>
+
+              <div className="space-y-2">
+                <div className="text-sm font-semibold text-white/90">
+                  Data & identity
+                </div>
+                <CodeBlock>{`import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+  Badge,
   Table,
   TableBody,
   TableCaption,
@@ -181,18 +228,10 @@ export default function Example() {
   TableHead,
   TableHeader,
   TableRow,
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
   Tag,
-  Textarea,
-  Toast,
-  ToastAction,
-  ToastDescription,
-  ToastTitle,
-  Tooltip,
 } from "@gmook9/pristine-ui";`}</CodeBlock>
+              </div>
+            </div>
           </CardContent>
         </Card>
 
