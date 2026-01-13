@@ -20,3 +20,6 @@ export type { AlertProps, AlertTitleProps, AlertDescriptionProps } from "./alert
 
 export { Avatar, AvatarImage, AvatarFallback } from "./avatar";
 export type { AvatarProps, AvatarImageProps, AvatarFallbackProps } from "./avatar";
+
+export { Switch } from "./switch";
+export type { SwitchProps } from "./switch";
