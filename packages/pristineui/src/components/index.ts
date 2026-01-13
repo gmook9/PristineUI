@@ -14,3 +14,6 @@ export type { InputProps } from "./input";
 
 export { Badge } from "./badge";
 export type { BadgeProps } from "./badge";
+
+export { Alert, AlertTitle, AlertDescription } from "./alert";
+export type { AlertProps, AlertTitleProps, AlertDescriptionProps } from "./alert";
