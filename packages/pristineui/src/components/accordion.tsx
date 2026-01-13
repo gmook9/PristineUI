@@ -11,15 +11,15 @@ interface AccordionContextValue {
 const AccordionContext = React.createContext<AccordionContextValue | null>(null);
 
 export interface AccordionProps extends React.HTMLAttributes<HTMLDivElement> {
-  defaultValue?: string | null;
+  defaultValue?: string;
 }
 
 export function Accordion({
   className,
-  defaultValue = null,
+  defaultValue,
   ...props
 }: AccordionProps) {
-  const [value, setValue] = React.useState<AccordionValue>(defaultValue);
+  const [value, setValue] = React.useState<AccordionValue>(defaultValue ?? null);
 
   return (
     <AccordionContext.Provider value={{ value, onValueChange: setValue }}>
