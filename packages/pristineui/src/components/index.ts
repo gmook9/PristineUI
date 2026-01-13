@@ -23,3 +23,6 @@ export type { AvatarProps, AvatarImageProps, AvatarFallbackProps } from "./avata
 
 export { Switch } from "./switch";
 export type { SwitchProps } from "./switch";
+
+export { Progress } from "./progress";
+export type { ProgressProps } from "./progress";
