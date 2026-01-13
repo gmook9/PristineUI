@@ -2,13 +2,13 @@ import * as React from "react";
 import { cn } from "../utils/cn";
 
 export interface TooltipProps extends React.HTMLAttributes<HTMLSpanElement> {
-  content: React.ReactNode;
+  text: React.ReactNode;
   side?: "top" | "right" | "bottom" | "left";
 }
 
 export function Tooltip({
   className,
-  content,
+  text,
   side = "top",
   children,
   ...props
@@ -29,7 +29,7 @@ export function Tooltip({
           className
         )}
       >
-        {content}
+        {text}
       </span>
     </span>
   );

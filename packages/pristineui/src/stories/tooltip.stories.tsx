@@ -5,7 +5,7 @@ const meta: Meta<typeof Tooltip> = {
   title: "PristineUI/Tooltip",
   component: Tooltip,
   args: {
-    content: "Helpful tooltip text",
+    text: "Helpful tooltip text",
   },
 };
 
@@ -26,7 +26,7 @@ export const Top: Story = {
 };
 
 export const Bottom: Story = {
-  args: { side: "bottom", content: "Bottom tooltip" },
+  args: { side: "bottom", text: "Bottom tooltip" },
   render: (args) => (
     <div className="flex min-h-[120px] items-center justify-center">
       <Tooltip {...args}>
@@ -39,7 +39,7 @@ export const Bottom: Story = {
 };
 
 export const Left: Story = {
-  args: { side: "left", content: "Left tooltip" },
+  args: { side: "left", text: "Left tooltip" },
   render: (args) => (
     <div className="flex min-h-[120px] items-center justify-center">
       <Tooltip {...args}>
@@ -52,7 +52,7 @@ export const Left: Story = {
 };
 
 export const Right: Story = {
-  args: { side: "right", content: "Right tooltip" },
+  args: { side: "right", text: "Right tooltip" },
   render: (args) => (
     <div className="flex min-h-[120px] items-center justify-center">
       <Tooltip {...args}>
