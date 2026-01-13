@@ -17,3 +17,6 @@ export type { BadgeProps } from "./badge";
 
 export { Alert, AlertTitle, AlertDescription } from "./alert";
 export type { AlertProps, AlertTitleProps, AlertDescriptionProps } from "./alert";
+
+export { Avatar, AvatarImage, AvatarFallback } from "./avatar";
+export type { AvatarProps, AvatarImageProps, AvatarFallbackProps } from "./avatar";
