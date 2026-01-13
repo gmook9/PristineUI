@@ -63,3 +63,6 @@ export type {
   AccordionTriggerProps,
   AccordionContentProps,
 } from "./accordion";
+
+export { Tooltip } from "./tooltip";
+export type { TooltipProps } from "./tooltip";
