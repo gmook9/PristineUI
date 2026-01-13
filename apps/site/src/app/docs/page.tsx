@@ -128,6 +128,74 @@ export default function Example() {
           </CardContent>
         </Card>
 
+        <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
+          <CardHeader>
+            <h2 className="text-lg font-semibold">Available imports</h2>
+            <p className="text-sm text-white/70">
+              Copy this to pull in everything we currently export.
+            </p>
+          </CardHeader>
+          <CardContent>
+            <CodeBlock>{`import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+  Alert,
+  AlertDescription,
+  AlertTitle,
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+  Badge,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbSeparator,
+  Button,
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  Checkbox,
+  Divider,
+  Dropdown,
+  DropdownContent,
+  DropdownItem,
+  DropdownTrigger,
+  Input,
+  Modal,
+  ModalDescription,
+  ModalFooter,
+  ModalHeader,
+  ModalTitle,
+  Progress,
+  Select,
+  Skeleton,
+  Switch,
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+  Tag,
+  Textarea,
+  Toast,
+  ToastAction,
+  ToastDescription,
+  ToastTitle,
+  Tooltip,
+} from "@gmook9/pristine-ui";`}</CodeBlock>
+          </CardContent>
+        </Card>
+
         <footer className="pt-4 text-center text-xs text-white/45">
           If you run into styling issues, confirm the CSS import is present and that
           the package version is up to date.
