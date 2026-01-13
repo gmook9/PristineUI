@@ -128,6 +128,113 @@ export default function Example() {
           </CardContent>
         </Card>
 
+        <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
+          <CardHeader>
+            <h2 className="text-lg font-semibold">Available imports</h2>
+            <p className="text-sm text-white/70">
+              Grab only what you need. Components are grouped by category.
+            </p>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-6">
+              <div className="space-y-2">
+                <div className="text-sm font-semibold text-white/90">Layout</div>
+                <CodeBlock>{`import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  Divider,
+} from "@gmook9/pristine-ui";`}</CodeBlock>
+              </div>
+
+              <div className="space-y-2">
+                <div className="text-sm font-semibold text-white/90">Navigation</div>
+                <CodeBlock>{`import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbSeparator,
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@gmook9/pristine-ui";`}</CodeBlock>
+              </div>
+
+              <div className="space-y-2">
+                <div className="text-sm font-semibold text-white/90">Forms</div>
+                <CodeBlock>{`import {
+  Button,
+  Checkbox,
+  Input,
+  Select,
+  Switch,
+  Textarea,
+} from "@gmook9/pristine-ui";`}</CodeBlock>
+              </div>
+
+              <div className="space-y-2">
+                <div className="text-sm font-semibold text-white/90">
+                  Disclosure & menus
+                </div>
+                <CodeBlock>{`import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+  Dropdown,
+  DropdownContent,
+  DropdownItem,
+  DropdownTrigger,
+  Tooltip,
+} from "@gmook9/pristine-ui";`}</CodeBlock>
+              </div>
+
+              <div className="space-y-2">
+                <div className="text-sm font-semibold text-white/90">Feedback</div>
+                <CodeBlock>{`import {
+  Alert,
+  AlertDescription,
+  AlertTitle,
+  Modal,
+  ModalDescription,
+  ModalFooter,
+  ModalHeader,
+  ModalTitle,
+  Progress,
+  Skeleton,
+  Toast,
+  ToastAction,
+  ToastDescription,
+  ToastTitle,
+} from "@gmook9/pristine-ui";`}</CodeBlock>
+              </div>
+
+              <div className="space-y-2">
+                <div className="text-sm font-semibold text-white/90">
+                  Data & identity
+                </div>
+                <CodeBlock>{`import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+  Badge,
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+  Tag,
+} from "@gmook9/pristine-ui";`}</CodeBlock>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
         <footer className="pt-4 text-center text-xs text-white/45">
           If you run into styling issues, confirm the CSS import is present and that
           the package version is up to date.
