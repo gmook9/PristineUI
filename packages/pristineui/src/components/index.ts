@@ -66,3 +66,75 @@ export type {
 
 export { Tooltip } from "./tooltip";
 export type { TooltipProps } from "./tooltip";
+
+export { Divider } from "./divider";
+export type { DividerProps } from "./divider";
+
+export { Tag } from "./tag";
+export type { TagProps } from "./tag";
+
+export {
+  Table,
+  TableHeader,
+  TableBody,
+  TableRow,
+  TableHead,
+  TableCell,
+  TableCaption,
+} from "./table";
+export type {
+  TableProps,
+  TableHeaderProps,
+  TableBodyProps,
+  TableRowProps,
+  TableHeadProps,
+  TableCellProps,
+  TableCaptionProps,
+} from "./table";
+
+export { Tabs, TabsList, TabsTrigger, TabsContent } from "./tabs";
+export type {
+  TabsProps,
+  TabsListProps,
+  TabsTriggerProps,
+  TabsContentProps,
+} from "./tabs";
+
+export {
+  Modal,
+  ModalHeader,
+  ModalTitle,
+  ModalDescription,
+  ModalFooter,
+} from "./modal";
+export type {
+  ModalProps,
+  ModalHeaderProps,
+  ModalTitleProps,
+  ModalDescriptionProps,
+  ModalFooterProps,
+} from "./modal";
+
+export {
+  Dropdown,
+  DropdownTrigger,
+  DropdownContent,
+  DropdownItem,
+} from "./dropdown";
+export type {
+  DropdownProps,
+  DropdownTriggerProps,
+  DropdownContentProps,
+  DropdownItemProps,
+} from "./dropdown";
+
+export { Select } from "./select";
+export type { SelectProps } from "./select";
+
+export { Toast, ToastTitle, ToastDescription, ToastAction } from "./toast";
+export type {
+  ToastProps,
+  ToastTitleProps,
+  ToastDescriptionProps,
+  ToastActionProps,
+} from "./toast";
