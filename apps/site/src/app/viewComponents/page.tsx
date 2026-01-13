@@ -58,6 +58,20 @@ import {
 
 import LiquidChrome from "@/components/LiquidChrome";
 
+function SectionTitle({
+  label,
+  imports,
+}: {
+  label: string;
+  imports: string;
+}) {
+  return (
+    <Tooltip text={`Import: ${imports}`}>
+      <h3 className="text-lg font-semibold">{label}</h3>
+    </Tooltip>
+  );
+}
+
 export default function ComponentsPage() {
   const [modalOpen, setModalOpen] = React.useState(false);
 
@@ -111,7 +125,7 @@ export default function ComponentsPage() {
         <section className="grid gap-6 md:grid-cols-3">
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
-              <h3 className="text-lg font-semibold">Buttons</h3>
+              <SectionTitle label="Buttons" imports="Button" />
               <p className="text-sm text-white/70">Variants + sizes</p>
             </CardHeader>
               <CardContent>
@@ -142,7 +156,10 @@ export default function ComponentsPage() {
           </Card>
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
-              <h3 className="text-lg font-semibold">Card</h3>
+              <SectionTitle
+                label="Card"
+                imports="Card, CardHeader, CardContent, CardFooter"
+              />
               <p className="text-sm text-white/70">Header + content</p>
             </CardHeader>
             <CardContent className="space-y-3">
@@ -161,7 +178,7 @@ export default function ComponentsPage() {
           {/* Inputs card */}
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader className="space-y-1">
-              <h3 className="text-lg font-semibold">Inputs</h3>
+              <SectionTitle label="Inputs" imports="Input" />
               <p className="text-sm text-white/70">Basic form control.</p>
             </CardHeader>
             <CardContent>
@@ -181,7 +198,7 @@ export default function ComponentsPage() {
         <section className="grid gap-6 md:grid-cols-2">
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
-              <h3 className="text-lg font-semibold">Badges & Tags</h3>
+              <SectionTitle label="Badges & Tags" imports="Badge, Tag" />
               <p className="text-sm text-white/70">Status + labels</p>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -205,7 +222,10 @@ export default function ComponentsPage() {
 
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
-              <h3 className="text-lg font-semibold">Alerts</h3>
+              <SectionTitle
+                label="Alerts"
+                imports="Alert, AlertTitle, AlertDescription"
+              />
               <p className="text-sm text-white/70">Messaging</p>
             </CardHeader>
             <CardContent className="space-y-3">
@@ -228,7 +248,10 @@ export default function ComponentsPage() {
         <section className="grid gap-6 md:grid-cols-3">
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
-              <h3 className="text-lg font-semibold">Avatars</h3>
+              <SectionTitle
+                label="Avatars"
+                imports="Avatar, AvatarImage, AvatarFallback"
+              />
               <p className="text-sm text-white/70">Image + fallback</p>
             </CardHeader>
             <CardContent className="flex items-center gap-3">
@@ -246,7 +269,10 @@ export default function ComponentsPage() {
 
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
-              <h3 className="text-lg font-semibold">Switch & Checkbox</h3>
+              <SectionTitle
+                label="Switch & Checkbox"
+                imports="Switch, Checkbox"
+              />
               <p className="text-sm text-white/70">Toggles</p>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -265,7 +291,7 @@ export default function ComponentsPage() {
 
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
-              <h3 className="text-lg font-semibold">Progress</h3>
+              <SectionTitle label="Progress" imports="Progress" />
               <p className="text-sm text-white/70">Completion states</p>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -279,7 +305,7 @@ export default function ComponentsPage() {
         <section className="grid gap-6 md:grid-cols-2">
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
-              <h3 className="text-lg font-semibold">Textarea</h3>
+              <SectionTitle label="Textarea" imports="Textarea" />
               <p className="text-sm text-white/70">Multi-line input</p>
             </CardHeader>
             <CardContent className="space-y-3">
@@ -290,7 +316,7 @@ export default function ComponentsPage() {
 
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
-              <h3 className="text-lg font-semibold">Skeleton</h3>
+              <SectionTitle label="Skeleton" imports="Skeleton" />
               <p className="text-sm text-white/70">Loading states</p>
             </CardHeader>
             <CardContent className="space-y-3">
@@ -308,7 +334,10 @@ export default function ComponentsPage() {
         <section className="grid gap-6 md:grid-cols-2">
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
-              <h3 className="text-lg font-semibold">Breadcrumb</h3>
+              <SectionTitle
+                label="Breadcrumb"
+                imports="Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator"
+              />
               <p className="text-sm text-white/70">Navigation hints</p>
             </CardHeader>
             <CardContent>
@@ -332,7 +361,7 @@ export default function ComponentsPage() {
 
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
-              <h3 className="text-lg font-semibold">Divider</h3>
+              <SectionTitle label="Divider" imports="Divider" />
               <p className="text-sm text-white/70">Section separation</p>
             </CardHeader>
             <CardContent className="space-y-3 text-sm text-white/70">
@@ -350,7 +379,10 @@ export default function ComponentsPage() {
         <section className="grid gap-6 md:grid-cols-2">
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
-              <h3 className="text-lg font-semibold">Tabs</h3>
+              <SectionTitle
+                label="Tabs"
+                imports="Tabs, TabsList, TabsTrigger, TabsContent"
+              />
               <p className="text-sm text-white/70">Content switching</p>
             </CardHeader>
             <CardContent>
@@ -375,7 +407,10 @@ export default function ComponentsPage() {
 
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
-              <h3 className="text-lg font-semibold">Accordion</h3>
+              <SectionTitle
+                label="Accordion"
+                imports="Accordion, AccordionItem, AccordionTrigger, AccordionContent"
+              />
               <p className="text-sm text-white/70">Expandable items</p>
             </CardHeader>
             <CardContent>
@@ -404,7 +439,10 @@ export default function ComponentsPage() {
         <section className="grid gap-6 md:grid-cols-2">
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
-              <h3 className="text-lg font-semibold">Dropdown & Select</h3>
+              <SectionTitle
+                label="Dropdown & Select"
+                imports="Dropdown, DropdownTrigger, DropdownContent, DropdownItem, Select"
+              />
               <p className="text-sm text-white/70">Menus + native select</p>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -429,7 +467,7 @@ export default function ComponentsPage() {
 
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
-              <h3 className="text-lg font-semibold">Tooltip</h3>
+              <SectionTitle label="Tooltip" imports="Tooltip" />
               <p className="text-sm text-white/70">Hover hints</p>
             </CardHeader>
             <CardContent className="flex items-center gap-4">
@@ -450,7 +488,10 @@ export default function ComponentsPage() {
         <section className="grid gap-6">
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
-              <h3 className="text-lg font-semibold">Table</h3>
+              <SectionTitle
+                label="Table"
+                imports="Table, TableHeader, TableBody, TableRow, TableHead, TableCell"
+              />
               <p className="text-sm text-white/70">Data layout</p>
             </CardHeader>
             <CardContent>
@@ -487,7 +528,10 @@ export default function ComponentsPage() {
         <section className="grid gap-6 md:grid-cols-2">
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
-              <h3 className="text-lg font-semibold">Toast</h3>
+              <SectionTitle
+                label="Toast"
+                imports="Toast, ToastTitle, ToastDescription, ToastAction"
+              />
               <p className="text-sm text-white/70">Status message</p>
             </CardHeader>
             <CardContent>
@@ -505,7 +549,10 @@ export default function ComponentsPage() {
 
           <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
             <CardHeader>
-              <h3 className="text-lg font-semibold">Modal</h3>
+              <SectionTitle
+                label="Modal"
+                imports="Modal, ModalHeader, ModalTitle, ModalDescription, ModalFooter"
+              />
               <p className="text-sm text-white/70">Overlay dialog</p>
             </CardHeader>
             <CardContent>
