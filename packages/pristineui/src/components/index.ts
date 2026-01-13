@@ -32,3 +32,6 @@ export type { SkeletonProps } from "./skeleton";
 
 export { Textarea } from "./textarea";
 export type { TextareaProps } from "./textarea";
+
+export { Checkbox } from "./checkbox";
+export type { CheckboxProps } from "./checkbox";
