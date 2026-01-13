@@ -35,3 +35,18 @@ export type { TextareaProps } from "./textarea";
 
 export { Checkbox } from "./checkbox";
 export type { CheckboxProps } from "./checkbox";
+
+export {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbSeparator,
+} from "./breadcrumb";
+export type {
+  BreadcrumbProps,
+  BreadcrumbListProps,
+  BreadcrumbItemProps,
+  BreadcrumbLinkProps,
+  BreadcrumbSeparatorProps,
+} from "./breadcrumb";
