@@ -29,3 +29,6 @@ export type { ProgressProps } from "./progress";
 
 export { Skeleton } from "./skeleton";
 export type { SkeletonProps } from "./skeleton";
+
+export { Textarea } from "./textarea";
+export type { TextareaProps } from "./textarea";
