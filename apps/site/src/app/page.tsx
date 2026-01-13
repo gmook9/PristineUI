@@ -110,7 +110,7 @@ export default function Home() {
         </section>
 
         <footer className="pb-4 text-center text-xs text-white/40">
-          © {new Date().getFullYear()} PristineUI • Built with React + Tailwind
+          © {new Date().getFullYear()} PristineUI
         </footer>
       </div>
     </main>
