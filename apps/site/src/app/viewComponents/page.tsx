@@ -515,7 +515,7 @@ export default function ComponentsPage() {
                     <TableCell className="text-right">$86.50</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell>Maria Gomez</TableCell>
+                    <TableCell>Martina Gomez</TableCell>
                     <TableCell>Paid</TableCell>
                     <TableCell className="text-right">$54.00</TableCell>
                   </TableRow>
