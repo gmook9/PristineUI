@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { Button, Card, CardContent } from "@gmook9/pristine-ui";
 
+// Background from https://reactbits.dev/
 import OrbBackground from "@/components/OrbBackground";
 import InstallPill from "@/components/InstallPill";
 import TopNav from "@/components/TopNav";
