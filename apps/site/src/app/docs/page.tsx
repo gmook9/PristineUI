@@ -112,7 +112,7 @@ export default function DocsPage() {
 
         <Card className="border border-white/10 bg-white/5 shadow-sm backdrop-blur">
           <CardHeader>
-            <h2 className="text-lg font-semibold">Use components</h2>
+            <h2 className="text-lg font-semibold">Usage Example</h2>
             <p className="text-sm text-white/70">
               Import and render components like any other React library.
             </p>
