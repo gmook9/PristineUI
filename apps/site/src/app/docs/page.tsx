@@ -1,6 +1,15 @@
 "use client";
 import Link from "next/link";
-import { Button, Card, CardHeader, CardContent } from "@gmook9/pristine-ui";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+  Button,
+  Card,
+  CardHeader,
+  CardContent,
+} from "@gmook9/pristine-ui";
 
 import Aurora from "@/components/Aurora";
 
@@ -136,21 +145,62 @@ export default function Example() {
             </p>
           </CardHeader>
           <CardContent>
-            <div className="space-y-6">
-              <div className="space-y-2">
-                <div className="text-sm font-semibold text-white/90">Layout</div>
-                <CodeBlock>{`import {
+            <Accordion className="space-y-3">
+              <AccordionItem value="layout">
+                <AccordionTrigger
+                  value="layout"
+                  className="[&[aria-expanded='true']>svg]:rotate-90"
+                >
+                  <span>Layout</span>
+                  <svg
+                    className="ml-3 h-4 w-4 text-white/60 transition-transform"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M7 5l6 5-6 5"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </AccordionTrigger>
+                <AccordionContent value="layout">
+                  <CodeBlock>{`import {
   Card,
   CardContent,
   CardFooter,
   CardHeader,
   Divider,
 } from "@gmook9/pristine-ui";`}</CodeBlock>
-              </div>
+                </AccordionContent>
+              </AccordionItem>
 
-              <div className="space-y-2">
-                <div className="text-sm font-semibold text-white/90">Navigation</div>
-                <CodeBlock>{`import {
+              <AccordionItem value="navigation">
+                <AccordionTrigger
+                  value="navigation"
+                  className="[&[aria-expanded='true']>svg]:rotate-90"
+                >
+                  <span>Navigation</span>
+                  <svg
+                    className="ml-3 h-4 w-4 text-white/60 transition-transform"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M7 5l6 5-6 5"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </AccordionTrigger>
+                <AccordionContent value="navigation">
+                  <CodeBlock>{`import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
@@ -161,11 +211,32 @@ export default function Example() {
   TabsList,
   TabsTrigger,
 } from "@gmook9/pristine-ui";`}</CodeBlock>
-              </div>
+                </AccordionContent>
+              </AccordionItem>
 
-              <div className="space-y-2">
-                <div className="text-sm font-semibold text-white/90">Forms</div>
-                <CodeBlock>{`import {
+              <AccordionItem value="forms">
+                <AccordionTrigger
+                  value="forms"
+                  className="[&[aria-expanded='true']>svg]:rotate-90"
+                >
+                  <span>Forms</span>
+                  <svg
+                    className="ml-3 h-4 w-4 text-white/60 transition-transform"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M7 5l6 5-6 5"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </AccordionTrigger>
+                <AccordionContent value="forms">
+                  <CodeBlock>{`import {
   Button,
   Checkbox,
   Input,
@@ -173,13 +244,32 @@ export default function Example() {
   Switch,
   Textarea,
 } from "@gmook9/pristine-ui";`}</CodeBlock>
-              </div>
+                </AccordionContent>
+              </AccordionItem>
 
-              <div className="space-y-2">
-                <div className="text-sm font-semibold text-white/90">
-                  Disclosure & menus
-                </div>
-                <CodeBlock>{`import {
+              <AccordionItem value="disclosure">
+                <AccordionTrigger
+                  value="disclosure"
+                  className="[&[aria-expanded='true']>svg]:rotate-90"
+                >
+                  <span>Disclosure & menus</span>
+                  <svg
+                    className="ml-3 h-4 w-4 text-white/60 transition-transform"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M7 5l6 5-6 5"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </AccordionTrigger>
+                <AccordionContent value="disclosure">
+                  <CodeBlock>{`import {
   Accordion,
   AccordionContent,
   AccordionItem,
@@ -190,11 +280,32 @@ export default function Example() {
   DropdownTrigger,
   Tooltip,
 } from "@gmook9/pristine-ui";`}</CodeBlock>
-              </div>
+                </AccordionContent>
+              </AccordionItem>
 
-              <div className="space-y-2">
-                <div className="text-sm font-semibold text-white/90">Feedback</div>
-                <CodeBlock>{`import {
+              <AccordionItem value="feedback">
+                <AccordionTrigger
+                  value="feedback"
+                  className="[&[aria-expanded='true']>svg]:rotate-90"
+                >
+                  <span>Feedback</span>
+                  <svg
+                    className="ml-3 h-4 w-4 text-white/60 transition-transform"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M7 5l6 5-6 5"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </AccordionTrigger>
+                <AccordionContent value="feedback">
+                  <CodeBlock>{`import {
   Alert,
   AlertDescription,
   AlertTitle,
@@ -210,13 +321,32 @@ export default function Example() {
   ToastDescription,
   ToastTitle,
 } from "@gmook9/pristine-ui";`}</CodeBlock>
-              </div>
+                </AccordionContent>
+              </AccordionItem>
 
-              <div className="space-y-2">
-                <div className="text-sm font-semibold text-white/90">
-                  Data & identity
-                </div>
-                <CodeBlock>{`import {
+              <AccordionItem value="data">
+                <AccordionTrigger
+                  value="data"
+                  className="[&[aria-expanded='true']>svg]:rotate-90"
+                >
+                  <span>Data & identity</span>
+                  <svg
+                    className="ml-3 h-4 w-4 text-white/60 transition-transform"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M7 5l6 5-6 5"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </AccordionTrigger>
+                <AccordionContent value="data">
+                  <CodeBlock>{`import {
   Avatar,
   AvatarFallback,
   AvatarImage,
@@ -230,8 +360,9 @@ export default function Example() {
   TableRow,
   Tag,
 } from "@gmook9/pristine-ui";`}</CodeBlock>
-              </div>
-            </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </CardContent>
         </Card>
 
