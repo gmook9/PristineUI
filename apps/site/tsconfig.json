@@ -12,11 +12,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
+    "types": ["react", "react-dom"],
+    "jsxImportSource": "react",
     "incremental": true,
     "plugins": [
-      {
-        "name": "next"
-      }
+      { "name": "next" }
     ],
     "paths": {
       "@/*": ["./src/*"]

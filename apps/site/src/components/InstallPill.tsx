@@ -1,17 +1,45 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import {
+  Toast,
+  ToastAction,
+  ToastDescription,
+  ToastTitle,
+} from "@gmook9/pristine-ui";
 
 const CMD = "pnpm add @gmook9/pristine-ui";
 
 export default function InstallPill() {
   const [copied, setCopied] = useState(false);
+  const [toastVisible, setToastVisible] = useState(false);
+  const toastTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (toastTimeoutRef.current) {
+        clearTimeout(toastTimeoutRef.current);
+      }
+    };
+  }, []);
+
+  function showToast() {
+    setToastVisible(true);
+    if (toastTimeoutRef.current) {
+      clearTimeout(toastTimeoutRef.current);
+    }
+    toastTimeoutRef.current = setTimeout(() => {
+      setToastVisible(false);
+      toastTimeoutRef.current = null;
+    }, 1800);
+  }
 
   async function copy() {
     try {
       await navigator.clipboard.writeText(CMD);
       setCopied(true);
       window.setTimeout(() => setCopied(false), 1200);
+      showToast();
     } catch {
       // fallback if clipboard API is blocked
       const el = document.createElement("textarea");
@@ -23,6 +51,7 @@ export default function InstallPill() {
 
       setCopied(true);
       window.setTimeout(() => setCopied(false), 1200);
+      showToast();
     }
   }
 
@@ -43,6 +72,21 @@ export default function InstallPill() {
           {copied ? "Copied" : "Copy"}
         </button>
       </div>
+      {toastVisible ? (
+        <div className="pointer-events-none fixed bottom-6 left-0 right-0 z-50 flex justify-center px-4">
+          <Toast className="pointer-events-auto">
+            <ToastTitle>Copied</ToastTitle>
+            <ToastDescription>
+              Install command copied to your clipboard.
+            </ToastDescription>
+            <div className="mt-3 flex justify-end">
+              <ToastAction onClick={() => setToastVisible(false)}>
+                Dismiss
+              </ToastAction>
+            </div>
+          </Toast>
+        </div>
+      ) : null}
     </div>
   );
 }

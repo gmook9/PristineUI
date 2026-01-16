@@ -505,17 +505,17 @@ export default function ComponentsPage() {
                 </TableHeader>
                 <TableBody>
                   <TableRow>
-                    <TableCell>Alex Johnson</TableCell>
+                    <TableCell>Elmo O'Connor</TableCell>
                     <TableCell>Paid</TableCell>
                     <TableCell className="text-right">$120.00</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell>Casey Tran</TableCell>
+                    <TableCell>Casey Bucco</TableCell>
                     <TableCell>Pending</TableCell>
                     <TableCell className="text-right">$86.50</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell>Maria Gomez</TableCell>
+                    <TableCell>Martina Gomez</TableCell>
                     <TableCell>Paid</TableCell>
                     <TableCell className="text-right">$54.00</TableCell>
                   </TableRow>
