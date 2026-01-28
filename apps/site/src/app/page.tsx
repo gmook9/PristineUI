@@ -117,9 +117,20 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         <footer className="pb-4 text-center text-xs text-white/40">
           © {new Date().getFullYear()} PristineUI
+          <span className="text-zinc-700"> • </span>
+          <span>
+            Created by{" "}
+            <a
+              href="https://www.enchantingbutterfly.com/"
+              className="text-zinc-400 hover:text-zinc-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Enchanting Butterfly LLC
+            </a>
+          </span>
         </footer>
       </div>
     </main>
